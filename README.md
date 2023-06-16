@@ -7,7 +7,7 @@ The main algorithm used for the game playing is MinMax with alpha-beta pruning a
 The first function used in thinking, is the aiThink() function, it’s purpose is to act as
 an entry point for the algorithm, it calulates all the possible moves from a single state, loop over them and call the minMaxAlphaBeta function.\
 The main function is minMaxAlphaBeta which is a recursive function implementing the algorithm.\
-The minMaxAlphaBeta internally calls the calcHeuristic function which calculates the value of the leave nodes based on some heuristics (discussed below).\
+The minMaxAlphaBeta internally calls the calcHeuristic function which calculates the value of the leave nodes based on some heuristics (discussed below).
 # Heuristics:
 1)Mobility:\
 It measures how many possible moves in the next state for the player relative
