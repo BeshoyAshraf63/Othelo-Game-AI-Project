@@ -2,13 +2,13 @@
 # Programming Language & Tools:
 The project is made with C++ and CLR library for the GUI\
 Tools used: Visual Studio 2019\
-#Game Playing Supported algorithms:
+# Game Playing Supported algorithms:
 The main algorithm used for the game playing is MinMax with alpha-beta pruning algorithm.\
 The first function used in thinking, is the aiThink() function, it’s purpose is to act as
 an entry point for the algorithm, it calulates all the possible moves from a single state, loop over them and call the minMaxAlphaBeta function.\
 The main function is minMaxAlphaBeta which is a recursive function implementing the algorithm.\
 The minMaxAlphaBeta internally calls the calcHeuristic function which calculates the value of the leave nodes based on some heuristics (discussed below).\
-#Heuristics:
+# Heuristics:
 1)Mobility:
 It measures how many possible moves in the next state for the player relative
 to the opponent, It simply calls a function calcLegalMoves() which returns the
