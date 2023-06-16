@@ -1,7 +1,7 @@
-# Othelo-Game-AI-Project
+
 # Programming Language & Tools:
 The project is made with C++ and CLR library for the GUI\
-Tools used: Visual Studio 2019\
+Tools used: Visual Studio 2019
 # Game Playing Supported algorithms:
 The main algorithm used for the game playing is MinMax with alpha-beta pruning algorithm.\
 The first function used in thinking, is the aiThink() function, it’s purpose is to act as
@@ -20,4 +20,4 @@ It’s responsible for calculating the total number of coins for both players\
 3)Corners Captured:\
 It gives higher values for cells at the four corners of the board, since the coins
 at the four corners are stable and can’t be flipped, so they should have higher
-weight in calculating the heuristics\
+weight in calculating the heuristics
