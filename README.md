@@ -9,15 +9,15 @@ an entry point for the algorithm, it calulates all the possible moves from a sin
 The main function is minMaxAlphaBeta which is a recursive function implementing the algorithm.\
 The minMaxAlphaBeta internally calls the calcHeuristic function which calculates the value of the leave nodes based on some heuristics (discussed below).\
 # Heuristics:
-1)Mobility:
+1)Mobility:\
 It measures how many possible moves in the next state for the player relative
 to the opponent, It simply calls a function calcLegalMoves() which returns the
 total number of available moves. After calling it twice, for the maximizer and
 the minimizer, then the mobility is calculated as follows
-mobility = (100 * (maxCount - minCount)) / (maxCount + minCount).
-2)Coin Parity:
-It’s responsible for calculating the total number of coins for both players
-3)Corners Captured:
+mobility = (100 * (maxCount - minCount)) / (maxCount + minCount).\
+2)Coin Parity:\
+It’s responsible for calculating the total number of coins for both players\
+3)Corners Captured:\
 It gives higher values for cells at the four corners of the board, since the coins
 at the four corners are stable and can’t be flipped, so they should have higher
-weight in calculating the heuristics
+weight in calculating the heuristics\
